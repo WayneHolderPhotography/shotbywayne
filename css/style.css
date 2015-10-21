@@ -1,0 +1,339 @@
+/* CSS Document */
+body {
+  width: 100%;
+  margin: 0 0 0 0;
+  background: #fff;
+  min-width: 320px;
+  font-size: 16px;
+  font-family: Baskerville, 'palatino linotype', 'times new roman', serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.col {
+  float: left;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+.storyLinks {
+  margin: 20px 0;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 40px;
+  /* styling for main body on index page */
+}
+.storyLinks .imageLinks {
+  display: inline-block;
+  margin: 0 5px;
+  color: #000;
+  font-size: 0.8em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-align: left;
+  padding: 15px;
+  background: #f2f0ed;
+}
+.storyLinks .imageLinks span {
+  text-transform: uppercase;
+  display: block;
+}
+.storyLinks .imageLinks img {
+  margin: 0 0 10px 0;
+  opacity: 1;
+  -moz-opacity: 1;
+  filter: alpha(opacity=100);
+}
+.storyLinks .imageLinks:hover {
+  color: #444;
+}
+.storyLinks .imageLinks:hover img {
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.storyLinks .imageLinks-nh {
+  float: left;
+  height: 280px;
+  width: 183px;
+  margin: 0 5px 0 5px;
+  color: #000;
+  font-size: 0.8em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-align: left;
+  padding: 15px 0 0 17px;
+  border: solid 10px #f2f0ed;
+  background: #f2f0ed;
+}
+
+.bio {
+  font-size: 0.88em;
+  padding-right: 260px;
+  color: #222;
+  text-align: justify;
+  line-height: 1.4;
+}
+.bio a,
+.bio a:link,
+.bio a:visited,
+.bio a:hover {
+  color: #999;
+  text-decoration: none;
+}
+
+#main .clientContainer {
+  float: left;
+  padding: 20px 0 0 60px;
+}
+
+.clientLinks {
+  float: left;
+  height: 280px;
+  width: 250px;
+  margin: 0 5px 0 5px;
+  color: #000;
+  font-size: 0.8em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-align: left;
+  padding: 15px 0 0 17px;
+  border: solid 10px #f2f0ed;
+  background: #f2f0ed;
+}
+
+.clientLinks a {
+  color: #000;
+}
+
+.clientLinks a:hover {
+  color: #444;
+}
+
+#header {
+  /*float: left;*/
+  /*width: 1024px;*/
+  /*height: 70px;*/
+  position: relative;
+  border-bottom: solid #999 thin;
+  background: #fff;
+}
+
+h1 {
+  display: inline-block;
+}
+
+#header h1 a,
+#header h1 a:link,
+#header h1 a:visited,
+#header h1 a:hover {
+  font-size: 0.63em;
+  font-weight: 100;
+  letter-spacing: 8px;
+  margin: 0;
+  color: #333;
+  text-decoration: none;
+  line-height: 2em;
+}
+
+/* styling for main navigation */
+#navigation {
+  position: absolute;
+  right: 0;
+  top: 32px;
+  font-size: 0.78em;
+}
+
+#navigation ul {
+  margin: 0px;
+  padding: 0px;
+  text-align: right;
+}
+
+#navigation li {
+  list-style-type: none;
+  display: inline-block;
+  line-height: 1.5em;
+}
+
+#navigation li a {
+  text-decoration: none;
+  color: #666;
+  padding: 0.7em 0.7em;
+  margin: 2px;
+}
+
+#navigation li a:link {
+  color: #666;
+}
+
+#navigation li a:visited {
+  color: #666;
+}
+
+#navigation li a:hover {
+  text-decoration: none;
+  color: #222;
+}
+
+/* styling for main body of content */
+#main {
+  width: 100%;
+  background: #fff;
+  margin: 0 0 20px 0;
+  overflow: hidden;
+}
+
+/* styling for large photo */
+#mainPhoto {
+  float: left;
+  height: 520px;
+  width: 1024px;
+  background: #f2f0ed;
+  margin: 0 0;
+}
+
+#largePhoto {
+  height: 500px;
+  width: auto;
+  background: #f2f0ed;
+  margin: 10px 0 0 0;
+}
+
+/* styling for thumbnails plus their hover states. */
+#thumbnails {
+  float: left;
+  width: 1024px;
+  height: auto;
+  margin: 30px 0;
+  background: #fff;
+}
+
+#thumbnails a {
+  float: left;
+  display: block;
+  height: 75px;
+  width: 75px;
+  padding: 5px 5px;
+  cursor: default;
+  background: #fff;
+}
+
+#thumbnails a:hover {
+  background: #999;
+}
+
+/* styling for footer */
+#footer {
+  font-size: 0.75em;
+  color: #666;
+  border-top: solid #999 thin;
+  padding-top: 20px;
+}
+#footer ul {
+  margin: 0;
+  padding: 0px;
+  text-align: right;
+}
+#footer li {
+  list-style-type: none;
+  margin-bottom: 5px;
+}
+#footer li a {
+  text-decoration: none;
+  color: #999;
+}
+#footer li a:link, #footer li a:visited {
+  color: #999;
+}
+#footer li a:hover {
+  text-decoration: none;
+  color: #222;
+}
+#footer li > * {
+  vertical-align: bottom;
+  margin-left: 5px;
+}
+
+/* Tablet view */
+@media screen and (max-width: 1024px) {
+  #header {
+    text-align: center;
+    padding: 0 20px 15px;
+  }
+  #header h1 {
+    margin-bottom: 10px;
+  }
+  #header #navigation {
+    position: relative;
+    top: 0;
+    font-size: 1em;
+  }
+  #header #navigation ul {
+    text-align: center;
+  }
+
+  .storyLinks {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .storyLinks .imageLinks {
+    text-align: center;
+  }
+  .storyLinks img {
+    width: 100%;
+    max-width: 166px;
+  }
+
+  .bio {
+    padding: 0 20px;
+  }
+
+  #footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+/* Mobile view */
+@media screen and (max-width: 640px) {
+  body {
+    font-size: 16px;
+  }
+
+  #header {
+    position: fixed;
+    width: 100%;
+    min-width: 320px;
+    z-index: 10;
+    padding: 0 10px 10px;
+  }
+  #header h1 {
+    margin-bottom: 10px;
+  }
+  #header #navigation {
+    font-size: 1em;
+  }
+
+  .storyLinks {
+    margin: 0 10px;
+  }
+  .storyLinks .w-25 {
+    width: 50%;
+  }
+  .storyLinks .imageLinks {
+    margin-bottom: 20px;
+  }
+
+  #main {
+    padding-top: 200px;
+  }
+}
