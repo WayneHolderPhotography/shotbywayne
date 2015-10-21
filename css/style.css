@@ -12,6 +12,10 @@ body {
   box-sizing: border-box;
 }
 
+img {
+  border: 0;
+}
+
 #wrapper {
   max-width: 1024px;
   margin: 0 auto;
@@ -32,7 +36,8 @@ body {
   margin-bottom: 40px;
   /* styling for main body on index page */
 }
-.storyLinks .imageLinks {
+.storyLinks .imageLinks,
+.storyLinks .imageLinks-nh {
   display: inline-block;
   margin: 0 5px;
   color: #000;
@@ -43,37 +48,26 @@ body {
   padding: 15px;
   background: #f2f0ed;
 }
-.storyLinks .imageLinks span {
+.storyLinks .imageLinks span,
+.storyLinks .imageLinks-nh span {
   text-transform: uppercase;
   display: block;
 }
-.storyLinks .imageLinks img {
+.storyLinks .imageLinks img,
+.storyLinks .imageLinks-nh img {
   margin: 0 0 10px 0;
   opacity: 1;
   -moz-opacity: 1;
   filter: alpha(opacity=100);
 }
-.storyLinks .imageLinks:hover {
+.storyLinks .imageLinks:hover,
+.storyLinks .imageLinks-nh:hover {
   color: #444;
 }
-.storyLinks .imageLinks:hover img {
+.storyLinks a:hover img {
   opacity: 0.8;
   -moz-opacity: 0.8;
   filter: alpha(opacity=80);
-}
-.storyLinks .imageLinks-nh {
-  float: left;
-  height: 280px;
-  width: 183px;
-  margin: 0 5px 0 5px;
-  color: #000;
-  font-size: 0.8em;
-  letter-spacing: 3px;
-  text-decoration: none;
-  text-align: left;
-  padding: 15px 0 0 17px;
-  border: solid 10px #f2f0ed;
-  background: #f2f0ed;
 }
 
 .bio {
@@ -130,6 +124,7 @@ body {
 
 h1 {
   display: inline-block;
+  text-transform: uppercase;
 }
 
 #header h1 a,
@@ -237,7 +232,7 @@ h1 {
   font-size: 0.75em;
   color: #666;
   border-top: solid #999 thin;
-  padding-top: 20px;
+  padding: 20px 0;
 }
 #footer ul {
   margin: 0;
@@ -262,6 +257,10 @@ h1 {
 #footer li > * {
   vertical-align: bottom;
   margin-left: 5px;
+}
+
+.show-mid {
+  display: none;
 }
 
 /* Tablet view */
@@ -299,8 +298,11 @@ h1 {
   }
 
   #footer {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
+  }
+
+  .show-mid {
+    display: inline;
   }
 }
 /* Mobile view */
@@ -329,7 +331,8 @@ h1 {
   .storyLinks .w-25 {
     width: 50%;
   }
-  .storyLinks .imageLinks {
+  .storyLinks .imageLinks,
+  .storyLinks .imageLinks-nh {
     margin-bottom: 20px;
   }
 

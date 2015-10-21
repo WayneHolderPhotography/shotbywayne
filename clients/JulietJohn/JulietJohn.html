@@ -15,9 +15,6 @@
 
 <!-- END CSS //-->
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script src="../../galleria/galleria.js"></script>
-
 <style>
 	/* html,body{background:#333}*/
 	.content{color:#eee;font:14px/1.4 "helvetica neue", arial,sans-serif;width:620px;margin:20px auto}
@@ -32,6 +29,8 @@
 <div id="wrapper"><!-- wrapper to align center horizontally //-->
 
 	<div id="header"><!-- start of header //-->
+
+		<h1><a href="../../index.html">Wayne Holder Photography</a></h1>
 		
 		<div id="navigation"><!-- start of navigation //-->
 			<ul>
@@ -44,26 +43,15 @@
 			</ul>
 		</div><!-- end of navigation //-->
 		
-		<h1><a href="index.html">WAYNE HOLDER PHOTOGRAPHY</a></h1>
 	
   </div><!-- end of header //-->
 
 	<div id="main"><!-- start of main //-->
-
-	<p class="storyLinks">
     
     <div id="galleria">
     <!--#include virtual='showImages-JulietJohn.php' -->
     </div>
-    
-    </p>
-
-	<script>
-		// Load the classic theme
-		Galleria.loadTheme('../../galleria/galleria.classic.js');
-		// Initialize Galleria
-		$('#galleria').galleria();
-    </script>
+   
 
 	</div><!-- end of main //-->
 
@@ -76,6 +64,13 @@
 	</div><!-- end of footer //-->
 
 </div><!-- end of wrapper //-->
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="../../galleria/galleria.js"></script>
+<script>
+		// Load the classic theme
+		Galleria.loadTheme('../../galleria/galleria.classic.js');
+		// Initialize Galleria
+		$('#galleria').galleria();
+    </script>
 </body>
 </html>

@@ -1,0 +1,7 @@
+# Begin password protection #
+AuthName "cl1"
+Require valid-user
+AuthUserFile "/home/users/web/b1588/ipg.shotbywaynecouk/homedir/public_html/clients/cl1/.htpasswd"
+AuthType basic
+# End password protection #
+

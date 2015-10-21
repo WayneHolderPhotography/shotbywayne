@@ -1,0 +1,7 @@
+# Begin password protection #
+AuthName "Noelle"
+Require valid-user
+AuthUserFile "/home/users/web/b1588/ipg.shotbywaynecouk/homedir/public_html/clients/Noelle/.htpasswd"
+AuthType basic
+# End password protection #
+

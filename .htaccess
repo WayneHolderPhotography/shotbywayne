@@ -1,0 +1,30 @@
+
+# Begin password protection #
+AuthName "Password Protected"
+AuthUserFile /home/shotbyw1/public_html/_vti_pvt/service.pwd
+# End password protection #
+
+RewriteEngine on
+DirectoryIndex index.html.var index.htm index.html index.shtml index.xhtml index.wml index.perl index.pl index.plx index.ppl index.cgi index.jsp index.js index.jp index.php4 index.php3 index.php index.phtml default.htm default.html home.htm index.php5 Default.html Default.htm home.html
+# -FrontPage-
+AddType text/html .html
+AddOutputFilter INCLUDES .html
+
+IndexIgnore .htaccess */.??* *~ *# */HEADER* */README* */_vti*
+
+<Limit GET POST>
+order deny,allow
+deny from all
+allow from all
+</Limit>
+<Limit PUT DELETE>
+order deny,allow
+deny from all
+</Limit>
+
+
+AuthGroupFile /home/shotbyw1/public_html/_vti_pvt/service.grp
+RewriteCond %{HTTP_HOST} ^shotbywayne\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.shotbywayne\.com$
+RewriteRule ^/?$ "http\:\/\/shotbywayne\.co\.uk\/" [R=301,L]
+

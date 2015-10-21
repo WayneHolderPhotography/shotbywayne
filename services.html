@@ -15,9 +15,6 @@
 <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
 <!-- END CSS //-->
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script src="galleria/galleria.js"></script>
-
 <style>
 	/* html,body{background:#333}*/
 	.content{color:#eee;font:14px/1.4 "helvetica neue", arial,sans-serif;width:620px;margin:20px auto}
@@ -32,6 +29,10 @@
 <div id="wrapper"><!-- wrapper to align center horizontally //-->
 
 	<div id="header"><!-- start of header //-->
+
+		<h1>
+			<a href="index.html">Wayne Holder Photography</a>
+		</h1>
 		
 		<div id="navigation"><!-- start of navigation //-->
 			<ul>
@@ -43,51 +44,70 @@
    				<li><a href="clients.html">Client Area</a></li>
 			</ul>
 		</div><!-- end of navigation //-->
-		
-		<h1><a href="index.html">WAYNE HOLDER PHOTOGRAPHY</a></h1>
-	
+			
   </div><!-- end of header //-->
 
 	<div id="main"><!-- start of main //-->
 
-	<p class="storyLinks">
-		<a class="imageLinks-nh" title="Portrait Photographer London"><img class="imageLinks" src="images/services/a.jpg" border="0" alt="Portrait Photographer London" />
-        <!--[if IE 7]>
-		&nbsp;<br />
-		<![endif]-->
-	<!--[if IE 8]>
-		&nbsp;<br />
-		<![endif]-->
-	  </a>
-		<a class="imageLinks-nh" title="Beauty and Fashion Photographer London"><img src="images/services/b.jpg" border="0" alt="Beauty and Fashion Photographer London" />
-        <!--[if IE 7]>
-		&nbsp;<br />
-		<![endif]-->
-		</a>
-		<a class="imageLinks-nh" title="Photographer Services London"><img src="images/services/c.jpg" border="0" alt="Photographer Services London" />
-        <!--[if IE 7]>
-		&nbsp;<br />
-		<![endif]-->
-		</a>
-		<a class="imageLinks-nh" title="Projects"><img src="images/services/d.jpg" border="0" alt="Projects" />
-        <!--[if IE 7]>
-		&nbsp;<br />
-		<![endif]-->
-		</a>
-	</p>
+	<div class="storyLinks">
+		<div class="col w-25">
+			<div class="imageLinks-nh" title="Portrait Photographer London">
+				<img src="images/services/a.jpg" alt="Portrait Photographer London" />
+		        <!--[if IE 7]>
+				&nbsp;<br />
+				<![endif]-->
+				<!--[if IE 8]>
+				&nbsp;<br />
+				<![endif]-->
+		  	</div>		
+		</div>
+		<div class="col w-25">
+			<div class="imageLinks-nh" title="Beauty and Fashion Photographer London">
+				<img src="images/services/b.jpg" alt="Beauty and Fashion Photographer London" />
+	        	<!--[if IE 7]>
+				&nbsp;<br />
+				<![endif]-->
+			</div>			
+		</div>
+		<div class="col w-25">
+			<div class="imageLinks-nh" title="Photographer Services London">
+				<img src="images/services/c.jpg" alt="Photographer Services London" />
+	        	<!--[if IE 7]>
+				&nbsp;<br />
+				<![endif]-->
+			</div>			
+		</div>
+		<div class="col w-25">
+			<div class="imageLinks-nh" title="Projects">
+				<img src="images/services/d.jpg" border="0" alt="Projects" />
+	        	<!--[if IE 7]>
+				&nbsp;<br />
+				<![endif]-->
+			</div>			
+		</div>
+	</div>
 
-	
-	<p class="bio">My services are flexible because everyone has an idea of what they would like their final photograph to look like, this could mean traveling to a location, props,  studio, local park or just a home\garden shoot. Everything is catered for.<br /><br />
+	<div class="bio">
+		<p>
+			My services are flexible because everyone has an idea of what they would like their final photograph to look like, this could mean traveling to a location, props,  studio, local park or just a home\garden shoot. Everything is catered for.
+		</p>
+		<p>
+			I like to specialise in the unusual so please do not be reluctant to express your ideas or requirement to me  because more than likely I have done it before or I can help you achieve your desired bespoke images.			
+		</p>
+    	<strong>My services are listed below</strong>
+    	<ul>
+    		<li><strong>Portraits</strong> – Couples, Children, Family, Pregnancy, New Born, Pets, Friends &amp; Groups</li>
+    		<li><strong>Events</strong> – Celebrations, Weddings, Births, Presentations &amp; Parties</li>
+    		<li><strong>Fashion &amp; Beauty </strong>- Look Books, Website Images, Catalogues, Model Portfolio’s, Head Shots  &amp; Magazine</li>
+    	</ul>
+    	<p>
+			If you have a photography job that is not listed above please contact me to discuss as all photographic work is considered.
+		</p>
+		<p>
+			If you would like a quote please <a href="mailto:wayne@wayneholder.co.uk">email me</a> with your requirements.    		
+    	</p>
+	</div>
 
-	I like to specialise in the unusual so please do not be reluctant to express your ideas or requirement to me  because more than likely I have done it before or I can help you achieve your desired bespoke images.<br /><br />
-
-    <strong>My services are listed below</strong><br />
-<strong>Portraits</strong> – Couples, Children, Family, Pregnancy, New Born, Pets, Friends &amp; Groups  <br />
-<strong>Events</strong> – Celebrations, Weddings, Births, Presentations &amp; Parties<br />
-<strong>Fashion &amp; Beauty </strong>- Look Books, Website Images, Catalogues, Model Portfolio’s, Head Shots  &amp; Magazine<br />
-<br />
-
-	If you have a photography job that is not listed above please contact me to discuss as all photographic work is considered.  If you would like a quote please <a href="mailto:wayne@wayneholder.co.uk">email me</a> with your requirements. </p>
 
 	</div><!-- end of main //-->
 
@@ -104,6 +124,8 @@
 	</div><!-- end of footer //-->
 
 </div><!-- end of wrapper //-->
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="galleria/galleria.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

@@ -11,12 +11,9 @@
 <!-- END META //-->
 
 <!-- CSS //-->
-<link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../../css/style.css" type="text/css" media="screen" />
 
 <!-- END CSS //-->
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script src="/galleria/galleria.js"></script>
 
 <style>
 	/* html,body{background:#333}*/
@@ -32,38 +29,30 @@
 <div id="wrapper"><!-- wrapper to align center horizontally //-->
 
 	<div id="header"><!-- start of header //-->
+
+		<h1><a href="../../index.html">Wayne Holder Photography</a></h1>
 		
 		<div id="navigation"><!-- start of navigation //-->
 			<ul>
-				<li><a href="/index.html">Home</a></li>
-				<li><a href="/portraits.html">Portraits</a></li>
-				<li><a href="/beauty_and_fashion.html">Beauty &amp; Fashion</a></li>
-				<li><a href="/services.html">Services</a></li>
-				<li><a href="/projects.html">Projects</a></li>
-   				<li><a href="/clients.html"><strong>Client Area</strong></a></li>
+				<li><a href="../../index.html">Home</a></li>
+				<li><a href="../../portraits.html">Portraits</a></li>
+				<li><a href="../../beauty_and_fashion.html">Beauty &amp; Fashion</a></li>
+				<li><a href="../../services.html">Services</a></li>
+				<li><a href="../../projects.html">Projects</a></li>
+   				<li><a href="../../clients.html"><strong>Client Area</strong></a></li>
 			</ul>
 		</div><!-- end of navigation //-->
 		
-		<h1><a href="/index.html">WAYNE HOLDER PHOTOGRAPHY</a></h1>
 	
   </div><!-- end of header //-->
 
 	<div id="main"><!-- start of main //-->
 
-	<p class="storyLinks">
     
     <div id="galleria">
     <!--#include virtual='showImages-lorenzo.php' -->
     </div>
-    
-    </p>
-
-	<script>
-		// Load the classic theme
-		Galleria.loadTheme('/galleria/galleria.classic.js');
-		// Initialize Galleria
-		$('#galleria').galleria();
-    </script>
+   
 
 	</div><!-- end of main //-->
 
@@ -76,6 +65,13 @@
 	</div><!-- end of footer //-->
 
 </div><!-- end of wrapper //-->
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="../../galleria/galleria.js"></script>
+<script>
+		// Load the classic theme
+		Galleria.loadTheme('../../galleria/galleria.classic.js');
+		// Initialize Galleria
+		$('#galleria').galleria();
+    </script>
 </body>
 </html>

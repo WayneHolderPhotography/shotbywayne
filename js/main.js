@@ -1,17 +1,18 @@
 var t;
 
+// load('images/index/0605_Bella_2496web.jpg','images/index/DSC_5072web.jpg','images/index/DSC_7657new.jpg','images/index/Img0285web.jpg','images/line.gif');
+
 window.onload = function() {
-	load('images/index/0605_Bella_2496web.jpg','images/index/DSC_5072web.jpg','images/index/DSC_7657new.jpg','images/index/Img0285web.jpg','images/line.gif');
 	onLoadCustomEvents();
-	window.onresize();
 };
 
 window.onresize = function() {
 	window.clearTimeout(t)
 	t = window.setTimeout(function() {	
     dispatch_event(window, new CustomEvent("custom::resize", { bubbles:true, cancelable:true }));
-	}, 500);
+	}, 1000);
 };
+window.onresize();
 
 function onLoadCustomEvents() {
 	add_event(window, 'custom::resize', custom_resize);
@@ -24,7 +25,7 @@ function custom_resize() {
 // Set equal height
 function equalHeights() {
 	
-	var links = document.querySelectorAll('.storyLinks a');
+	var links = document.querySelectorAll('.storyLinks a span');
 	var height = 0;
 
 	for (var i = 0; i < links.length; i++) {
