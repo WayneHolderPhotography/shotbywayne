@@ -17,7 +17,7 @@ img {
 }
 
 #wrapper {
-  max-width: 1024px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -30,10 +30,11 @@ img {
 }
 
 .storyLinks {
-  margin: 20px 0;
+  margin: 20px auto;
   text-align: center;
   overflow: hidden;
   margin-bottom: 40px;
+  max-width: 1024px;
   /* styling for main body on index page */
 }
 .storyLinks .imageLinks,
@@ -55,7 +56,8 @@ img {
 }
 .storyLinks .imageLinks img,
 .storyLinks .imageLinks-nh img {
-  margin: 0 0 10px 0;
+  max-width: 166px;
+  margin-bottom: 10px;
   opacity: 1;
   -moz-opacity: 1;
   filter: alpha(opacity=100);
@@ -73,6 +75,8 @@ img {
 .bio {
   font-size: 0.88em;
   padding-right: 260px;
+  padding-left: 20px;
+  margin-bottom: 20px;
   color: #222;
   text-align: justify;
   line-height: 1.4;
@@ -114,12 +118,10 @@ img {
 }
 
 #header {
-  /*float: left;*/
-  /*width: 1024px;*/
-  /*height: 70px;*/
   position: relative;
   border-bottom: solid #999 thin;
   background: #fff;
+  padding: 0 20px;
 }
 
 h1 {
@@ -163,7 +165,7 @@ h1 {
 #navigation li a {
   text-decoration: none;
   color: #666;
-  padding: 0.7em 0.7em;
+  padding: 0.7em 0.5em;
   margin: 2px;
 }
 
@@ -184,7 +186,6 @@ h1 {
 #main {
   width: 100%;
   background: #fff;
-  margin: 0 0 20px 0;
   overflow: hidden;
 }
 
@@ -232,7 +233,7 @@ h1 {
   font-size: 0.75em;
   color: #666;
   border-top: solid #999 thin;
-  padding: 20px 0;
+  padding: 20px;
 }
 #footer ul {
   margin: 0;
@@ -263,6 +264,17 @@ h1 {
   display: none;
 }
 
+.content {
+  color: #eee;
+  font: 14px/1.4 "helvetica neue", arial,sans-serif;
+  width: 620px;
+  margin: 20px auto;
+}
+
+#galleria {
+  height: 735px;
+}
+
 /* Tablet view */
 @media screen and (max-width: 1024px) {
   #header {
@@ -290,7 +302,6 @@ h1 {
   }
   .storyLinks img {
     width: 100%;
-    max-width: 166px;
   }
 
   .bio {
@@ -303,6 +314,10 @@ h1 {
 
   .show-mid {
     display: inline;
+  }
+
+  #galleria {
+    height: 700px;
   }
 }
 /* Mobile view */

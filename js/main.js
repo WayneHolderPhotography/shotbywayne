@@ -1,18 +1,31 @@
 var t;
+var d = document;
 
 // load('images/index/0605_Bella_2496web.jpg','images/index/DSC_5072web.jpg','images/index/DSC_7657new.jpg','images/index/Img0285web.jpg','images/line.gif');
 
 window.onload = function() {
 	onLoadCustomEvents();
+	window.onresize();
+
+	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+
+	(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.0";
+				fjs.parentNode.insertBefore(js, fjs);
+			}
+			(document, 'script', 'facebook-jssdk'));
 };
 
 window.onresize = function() {
 	window.clearTimeout(t)
 	t = window.setTimeout(function() {	
-    dispatch_event(window, new CustomEvent("custom::resize", { bubbles:true, cancelable:true }));
+    	dispatch_event(window, new CustomEvent("custom::resize", { bubbles:true, cancelable:true }));
 	}, 1000);
 };
-window.onresize();
+
 
 function onLoadCustomEvents() {
 	add_event(window, 'custom::resize', custom_resize);
