@@ -271,10 +271,6 @@ h1 {
   margin: 20px auto;
 }
 
-#galleria {
-  height: 735px;
-}
-
 /* Tablet view */
 @media screen and (max-width: 1024px) {
   #header {
